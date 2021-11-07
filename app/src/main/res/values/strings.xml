@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">menu_HW</string>
+    <string name="item1">Contact us</string>
+    <string name="item2">Settings</string>
+    <string name="item3">Logout</string>
+    <string name="item4">Login</string>
+
+</resources>
