@@ -27,12 +27,12 @@ class MainActivity : AppCompatActivity() {
 
         val id = item.itemId
 
-        val item33 = R.id.item3
-        val item44 = R.id.item4
+//        val item33 = R.id.item3
+//        val item44 = R.id.item4
 
         if (id == R.id.item1) {
 
-            val intent = Intent(this,fourthActivity ::class.java)
+            val intent = Intent(this, fourthActivity::class.java)
             this.startActivity(intent)
 
         }
@@ -45,8 +45,8 @@ class MainActivity : AppCompatActivity() {
 
         if (id == R.id.item3) {
 
-            item33.visibility = View.GONE
-            item44.visibility = View.VISIBLE
+//            item33.visibility = View.GONE
+//            item44.visibility = View.VISIBLE
 
             //val intent = Intent(this, secondActivity::class.java)
             //this.startActivity(intent)
@@ -54,17 +54,22 @@ class MainActivity : AppCompatActivity() {
 
         if (id == R.id.item4) {
 
+         if (item.title == "login"){
 
-            item33.visibility = View.VISIBLE
-            item44.visibility = View.GONE
+             item.title = "logout"
+
+         } else item.title = "login" }
+
+
+//            item33.visibility = View.VISIBLE
+//            item44.visibility = View.GONE
 
            //val intent = Intent(this, secondActivity::class.java)
           //this.startActivity(intent)
-        }
 
         return super.onOptionsItemSelected(item)
 
-    }
+}}
 
 
-}
+
